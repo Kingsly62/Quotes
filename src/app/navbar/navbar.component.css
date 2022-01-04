@@ -10,8 +10,9 @@
  }
 
  nav{
-     position: fixed;
-     height: 100px;
+     position: relative;
+     top: 0%;
+     height: 90px;
      width: 100%;
      background: blue;
  }
@@ -24,6 +25,11 @@
      padding-left: 100px;
  }
 
+ nav .logo:hover{
+     transition: .5s;
+     color: orangered;
+ }
+ 
  nav ul{
      float: right;
      margin-right: 50px;
@@ -42,7 +48,7 @@
      font-weight: 600;
  }
 
- li a:hover{
+nav ul li a:hover{
      color: #786edd;
      transition: .5s;
  }

@@ -1,0 +1,32 @@
+#team{
+    float: right;
+    margin-top: -10%;
+}
+
+#button{
+    margin-left: 15%;
+}
+button{
+    background-color: grey;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 40px;
+    float: left;
+  }
+
+  p{
+    color: goldenrod;
+    font-weight: 1000;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h2{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
