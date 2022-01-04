@@ -1,16 +1,16 @@
 
- *{
+ /* *{
      margin: 0;
      padding: 0;
      text-decoration: none;
- }
+ } */
 
  body{
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
  nav{
-     position: relative;
+     position: fixed;
      top: 0%;
      height: 90px;
      width: 100%;

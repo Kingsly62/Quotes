@@ -1,4 +1,11 @@
 .rate{
-    padding: 50px;
+    height: 80vh;
     background-color: green;
+    top: 0pt;
+}
+
+h2{
+    margin-top: 6%;
+    align-content: center;
+    text-align: center;
 }
