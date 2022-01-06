@@ -12,7 +12,9 @@ export class RateUsComponent implements OnInit {
      public name=""
      public age=0
      public occupation=""
-
+     
+     count=0;
+    
     users=[
       {
       name: 'John',
@@ -43,4 +45,7 @@ export class RateUsComponent implements OnInit {
     
      this.users.push(newUser)
    }
+  counter(){
+    this.count++
+  }
 }

@@ -19,7 +19,8 @@
        Age: <input type="number" [(ngModel)]="age" placeholder="type your age"><br><br>
        Occupation:<input type="text" [(ngModel)]="occupation" placeholder="type your occupation">
         <div class="button">
-            <button (click)="addUsers()">Send Us</button>
+            <button (click)="addUsers()" (click)="counter()">Send Us</button>
+            <h1>Likes:{{count}}</h1>
           </div>  
     </div>
 </div>
