@@ -7,9 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RateUsComponent implements OnInit {
 
+     title='Comment To  Us Kindly in The Suggestion Box Below '
+
+     public name=""
+     public age=0
+     public occupation=""
+
+    users=[
+      {
+      name: 'John',
+      age: 30,
+      occupation: 'Python developer'
+      },
+      {
+        name: 'Smith',
+        age: 45,
+        occupation: 'Angular developer'
+        },
+        {
+          name: 'Sylvia',
+          age: 45,
+          occupation: 'Javascript Developer'
+          },  
+    ]
   constructor() { }
 
   ngOnInit(): void {
   }
-
+   addUsers(){
+     let newUser = {
+       name: this.name,
+       age: this.age,
+       occupation: this.occupation
+     }
+    
+     this.users.push(newUser)
+   }
 }

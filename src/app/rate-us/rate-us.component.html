@@ -1,5 +1,25 @@
 <div class="rate">
     <div id="rate">
     <h2>Rate Us</h2>
+
+   <div class="head">
+    <h3>{{title}}</h3>
+   </div>
+   <ul *ngFor="let user of users">
+       <li>
+       <div>{{user.name}}</div>
+       <div>{{user.age}}</div>
+       <div>{{user.occupation}}</div>
+       </li>
+   </ul>
+    </div>
+
+    <div class="add">
+      Name:  <input type="text" [(ngModel)]="name" placeholder="type your name"><br><br>
+       Age: <input type="number" [(ngModel)]="age" placeholder="type your age"><br><br>
+       Occupation:<input type="text" [(ngModel)]="occupation" placeholder="type your occupation">
+        <div class="button">
+            <button (click)="addUsers()">Send Us</button>
+          </div>  
     </div>
 </div>

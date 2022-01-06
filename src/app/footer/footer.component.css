@@ -1,7 +1,19 @@
 .footer{
-    position: fixed;
+
     bottom: 0;
     padding: 10px;
     background-color: hotpink;
     width: 100%;
+}
+
+.Icons {
+    display:right;
+}
+
+h4{
+    color: brown;
+}
+
+h4:hover{
+    color: cyan;
 }

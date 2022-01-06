@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
      about='About Us'
+
+     showContent:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+moreContent(){
+  this.showContent=!this.showContent
+}
 }
