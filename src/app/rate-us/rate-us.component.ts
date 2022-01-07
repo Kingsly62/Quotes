@@ -12,6 +12,9 @@ export class RateUsComponent implements OnInit {
      public name=""
      public age=0
      public occupation=""
+
+     showViews:boolean=false;
+
      
      count=0;
     
@@ -21,16 +24,7 @@ export class RateUsComponent implements OnInit {
       age: 30,
       occupation: 'Python developer'
       },
-      {
-        name: 'Smith',
-        age: 45,
-        occupation: 'Angular developer'
-        },
-        {
-          name: 'Sylvia',
-          age: 45,
-          occupation: 'Javascript Developer'
-          },  
+       
     ]
   constructor() { }
 
@@ -47,5 +41,8 @@ export class RateUsComponent implements OnInit {
    }
   counter(){
     this.count++
+  }
+  view(){
+    this.showViews=!this.showViews
   }
 }

@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RateUsComponent } from './rate-us/rate-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { DownvoteComponent } from './downvote/downvote.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     AboutUsComponent,
     ContactComponent,
     RateUsComponent,
-    FooterComponent
+    FooterComponent,
+    DownvoteComponent
   ],
   imports: [
     BrowserModule,

@@ -5,26 +5,26 @@
    <div class="head">
     <h3>{{title}}</h3>
    </div>
-   <div id="show" *ngIf="showViews">
+   <div *ngIf="showViews">
    <ul *ngFor="let user of users">
        <li>
        <div>{{user.name}}</div>
        <div>{{user.age}}</div>
        <div>{{user.occupation}}</div>
        </li>
-   </ul>
-   <button>Delete Upvote</button>
+    </ul>
+    <button>Delete Downvotes</button>
     </div>
-   <button (click)="view()">View/Close Upvotes</button>
+    <button (click)="view()">View/Close Downvote</button>
     <div class="add">
-    <div><img src="../../assets/happy.jpg"  height="60" width="60" alt="happy"></div>
+       <div><img src="../../assets/sad.jpg" height="60" width="60" alt="happy"></div>
       Name:  <input type="text" [(ngModel)]="name" placeholder="type your name"><br><br>
        Age: <input type="number" [(ngModel)]="age" placeholder="type your age"><br><br>
        Occupation:<input type="text" [(ngModel)]="occupation" placeholder="type your occupation">
         <div class="button">
-            <button (click)="addUsers()" (click)="counter()">Like</button>
-            <h1>Upvotes:{{count}}</h1>
+            <button (click)="addUsers()" (click)="counter()">dislike</button>
+            <h1>Downvote:{{count}}</h1>
           </div>  
     </div>
-    <app-downvote></app-downvote>
 </div>
+
