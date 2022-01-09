@@ -42,7 +42,7 @@ Below is an example of how you can instruct your audience on installing and sett
 
 ## Link of the Website
 
-[Click Here](/)
+[Click Here](https://kingsly62.github.io/Quotes/)
 
 ## Contribution
 
