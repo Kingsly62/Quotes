@@ -1,13 +1,15 @@
 .footer{
 
     bottom: 0;
-    padding: 50px;
+    height: 50vh;
     background-color: hotpink;
     width: 100%;
+
 }
 
 .Icons {
     display:right;
+    margin-left: 3%;
 }
 
 h4{

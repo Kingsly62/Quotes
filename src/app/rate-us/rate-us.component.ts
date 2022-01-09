@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RateUsComponent implements OnInit {
 
      title='Comment To  Us Kindly in The Suggestion Box Below '
-
+      time='Time'
      public name=""
      public age=0;
      public occupation=""

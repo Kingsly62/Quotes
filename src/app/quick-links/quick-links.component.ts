@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuickLinksComponent implements OnInit {
    head="Quick Links"
-   public color="color"
   constructor() { }
 
   ngOnInit(): void {
