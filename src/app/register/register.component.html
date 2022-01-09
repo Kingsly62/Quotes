@@ -1,0 +1,12 @@
+<div class="register">
+    <h2>Register with Us <br> in the form</h2>
+    <div id="register" *ngIf="show">
+        Name:<input type="text" placeholder="name"><br>
+        Email:<input type="text" placeholder="email"><br>
+        Password:<input type="password" placeholder="password"><br>
+    
+    </div>
+    <div id="button">
+      <button class="btn btn-success" (click)="register()">Register</button>
+      </div>
+</div>

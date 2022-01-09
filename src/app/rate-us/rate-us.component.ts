@@ -10,7 +10,7 @@ export class RateUsComponent implements OnInit {
      title='Comment To  Us Kindly in The Suggestion Box Below '
 
      public name=""
-     public age=0
+     public age=0;
      public occupation=""
 
      showViews:boolean=false;
@@ -39,10 +39,19 @@ export class RateUsComponent implements OnInit {
     
      this.users.push(newUser)
    }
-  counter(){
-    this.count++
+  counter(type:string){
+    type==='add'?this.count++:this.count--
   }
   view(){
     this.showViews=!this.showViews
+  }
+
+  removeUsers(){
+    let newUserRemove = {
+      name:this.name,
+      age:this.age,
+      occupation:this.occupation
+    }
+    this.users.splice(0)
   }
 }

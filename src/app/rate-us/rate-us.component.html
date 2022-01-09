@@ -13,7 +13,7 @@
        <div>{{user.occupation}}</div>
        </li>
    </ul>
-   <button>Delete Upvote</button>
+   <button (click)="counter('minus')" (click)="removeUsers">Delete Upvote</button>
     </div>
    <button (click)="view()">View/Close Upvotes</button>
     <div class="add">
@@ -22,7 +22,7 @@
        Age: <input type="number" [(ngModel)]="age" placeholder="type your age"><br><br>
        Occupation:<input type="text" [(ngModel)]="occupation" placeholder="type your occupation">
         <div class="button">
-            <button (click)="addUsers()" (click)="counter()">Like</button>
+            <button (click)="addUsers()" (click)="counter('add')">Like</button>
             <h1>Upvotes:{{count}}</h1>
           </div>  
     </div>

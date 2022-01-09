@@ -37,8 +37,9 @@ export class DownvoteComponent implements OnInit {
    
     this.users.push(newUser)
   }
- counter(){
-   this.count++
+ counter(type:string){
+   
+   type==='add'?this.count++:this.count--
  }
 
  view(){
