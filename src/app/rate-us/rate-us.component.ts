@@ -12,6 +12,7 @@ export class RateUsComponent implements OnInit {
      public name=""
      public age=0;
      public occupation=""
+     public date=""
 
      showViews:boolean=false;
 
@@ -20,9 +21,10 @@ export class RateUsComponent implements OnInit {
     
     users=[
       {
-      name: 'John',
-      age: 30,
-      occupation: 'Python developer'
+      name: '',
+      age: 0,
+      occupation: '',
+      date:''
       },
        
     ]
@@ -34,7 +36,8 @@ export class RateUsComponent implements OnInit {
      let newUser = {
        name: this.name,
        age: this.age,
-       occupation: this.occupation
+       occupation: this.occupation,
+       date: this.date
      }
     
      this.users.push(newUser)
