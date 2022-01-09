@@ -2,7 +2,7 @@
 
     bottom: 0;
     height: 50vh;
-    background-color: hotpink;
+    background-color: black;
     width: 100%;
 
 }
@@ -10,6 +10,7 @@
 .Icons {
     display:right;
     margin-left: 3%;
+    color: whitesmoke;
 }
 
 h4{

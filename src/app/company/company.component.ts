@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompanyComponent implements OnInit {
   title="Company"
-  public color="black"
+  
   constructor() { }
 
   ngOnInit(): void {
