@@ -1,8 +1,6 @@
 .rate{
     float: right;
-    margin-top: -40%;
-    transform: 0, 40%;
-    position: absolute;
+    margin-top: -33%;
     margin-left: 60%;
 }
 
@@ -10,6 +8,7 @@ h2{
     margin-top: 6%;
     align-content: center;
     text-align: center;
+    color: white;
 }
 
 .add{
