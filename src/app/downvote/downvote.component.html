@@ -1,6 +1,6 @@
 <div class="rate">
     <div id="rate">
-    <h2>Rate Us</h2>
+    
 
    <div class="head">
     <h3>{{title}}</h3>
@@ -11,12 +11,12 @@
        <div>{{user.name}}</div>
        <div>{{user.age}}</div>
        <div>{{user.occupation}}</div>
-       <div>{{user.date|date:'shortTime'}}</div>
+       <div>{{user.date|date:'short'}}</div>
        </li>
     </ul>
-    <button  (click)="counter('minus')">Delete Downvotes</button>
+    <!-- <button  (click)="counter('minus')">Delete Downvotes</button> -->
     </div>
-    <button (click)="view()">View/Close Downvote</button>
+    <button type="view" (click)="view()">View/Close Downvote</button>
     <div class="add">
        <div><img src="../../assets/sad.jpg" height="60" width="60" alt="happy"></div>
       Name:  <input type="text" [(ngModel)]="name" placeholder="type your name"><br><br>
@@ -24,7 +24,8 @@
        Occupation:<input type="text" [(ngModel)]="occupation" placeholder="type your occupation"><br>
        Date:<input type="date" placeholder="date" [(ngModel)]="date" placeholder="date">
         <div class="button">
-            <button (click)="addUsers()" (click)="counter('add')">dislike</button>
+            <button type="submit" (click)="addUsers()" (click)="counter('add')">dislike</button>
+            <button type="menu" (click)="counter('minus')">Delete Downvotes</button>
             <!-- <button (click)="counter('minus')">Delete Downvotes</button> -->
             <h1>Downvote:{{count}}</h1>
           </div>  

@@ -34,3 +34,34 @@ h2{
 button{
     color: green;
 }
+
+button[type=view] {
+    background-color: orange;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  button[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  button[type=reset] {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  .button button{
+      gap: 2px;
+  }

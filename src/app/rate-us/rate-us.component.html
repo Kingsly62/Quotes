@@ -11,13 +11,14 @@
        <div>{{user.name}}</div>
        <div>{{user.age}}</div>
        <div>{{user.occupation}}</div>
-       <div>{{user.date}}</div>
+       <div>{{user.date|date:'short'}}</div>
+       
        </li>
    </ul>
    
-   <button (click)="counter('minus')" (click)="removeUsers">Delete Upvote</button>
+   <!-- <button (click)="counter('minus')" (click)="removeUsers">Delete Upvote</button> -->
     </div>
-   <button (click)="view()">View/Close Upvotes</button>
+   <button type="view" (click)="view()">View/Close Upvotes</button>
     <div class="add">
     <div><img src="../../assets/happy.jpg"  height="60" width="60" alt="happy"></div>
       Name:  <input type="text" [(ngModel)]="name" placeholder="type your name"><br><br>
@@ -25,7 +26,8 @@
        Occupation:<input type="text" [(ngModel)]="occupation" placeholder="type your occupation"><br>
       Date:<input type="date" [(ngModel)]="date" placeholder="date">
         <div class="button">
-            <button (click)="addUsers()" (click)="counter('add')">Like</button>
+            <button type="submit" (click)="addUsers()" (click)="counter('add')">Like</button>
+            <button type="reset" (click)="counter('minus')" (click)="removeUsers">Delete Upvote</button>
             <h1>Upvotes:{{count}}</h1>
           </div>  
     </div>

@@ -14,7 +14,7 @@ export class RateUsComponent implements OnInit {
      public occupation=""
      public date=""
 
-     showViews:boolean=false;
+     showViews:boolean=true;
 
      
      count=0;
