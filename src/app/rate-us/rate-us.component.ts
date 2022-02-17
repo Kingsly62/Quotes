@@ -14,10 +14,11 @@ export class RateUsComponent implements OnInit {
      public occupation=""
      public date=""
 
-     showViews:boolean=true;
+     showViews:boolean=false;
 
      
      count=0;
+     counts =0;
     
     users=[
       {
@@ -28,7 +29,7 @@ export class RateUsComponent implements OnInit {
       },
        
     ]
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
@@ -45,6 +46,12 @@ export class RateUsComponent implements OnInit {
   counter(type:string){
     type==='add'?this.count++:this.count--
   }
+
+  counters(type:string){
+    type==='add'?this.counts++:this.count--
+  }
+
+
   view(){
     this.showViews=!this.showViews
   }

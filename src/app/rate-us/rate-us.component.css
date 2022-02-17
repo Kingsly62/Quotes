@@ -14,7 +14,11 @@ h2{
     background-color: blanchedalmond;
     padding: 2rem;
     margin: 2rem;
-    max-width: 30%;
+    width: 40vw;
+    height: 40vh;
+    top: 20%;
+    position: absolute;
+    border-radius: 30px;
 }
 
 #cards{
@@ -42,6 +46,9 @@ button[type=view] {
     border: none;
     border-radius: 18px;
     cursor: pointer;
+    margin-left: 60%;
+    top: 80%;
+    position: absolute;
   }
 
   button[type=submit] {
@@ -54,14 +61,65 @@ button[type=view] {
   }
 
   button[type=reset] {
-    background-color: red;
+    background-color: green;
     color: white;
     padding: 8px 16px;
     border: none;
     border-radius: 18px;
     cursor: pointer;
+    top: 50%;
+    position: absolute;
   }
 
   .button button{
       gap: 2px;
+  }
+
+
+  #show{
+      margin-left: 50%;
+      height: 50vh;
+      width: 30vw;
+      background-color: antiquewhite;
+      border-radius: 30px;
+  }
+
+  button[type=delete]{
+      position: absolute;
+      top: 62%;
+      background-color: grey;
+      color: azure;
+      padding: 8px 16px;
+    border: none;
+    border-radius: 18px;
+    margin-left: 10%;
+      
+      
+  }
+
+  button[type=downvote]{
+      position: absolute;
+      color: beige;
+      background-color: red;
+      padding: 8px 16px;
+    border: none;
+    border-radius: 18px;
+      top: 60%;
+      
+  }
+
+  h1{
+      top: 47%;
+      position: absolute;
+      margin-left: 5%;
+      font-style: italic;
+  }
+
+  h3{
+      top: 58%;
+      position: absolute;
+      margin-left: 7%;
+  }
+  ul{
+      display: flex;
   }

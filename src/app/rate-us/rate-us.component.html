@@ -5,6 +5,7 @@
    <div class="head">
     <h3>{{title}}</h3>
    </div>
+   <div >
    <div id="show" *ngIf="showViews">
    <ul *ngFor="let user of users">
        <li>
@@ -15,21 +16,23 @@
        
        </li>
    </ul>
-   
+   <div class="buttons">
+     <button type="reset" (click)="counter('add')">Upvote</button><h1>{{count}}</h1>
+     <button type="downvote" (click)="counters('add')">Downvote</button><h3>{{counts}}</h3>
+     <button type="delete" (click)="removeUsers" (click)="view()">Delete</button>
+    
+   </div>
     </div>
-   <button type="view" (click)="view()">View/Close Upvotes</button>
+    </div>
+   <!-- <button type="view" (click)="view()" >View/Close Upvotes</button> -->
     <div class="add">
     
-      Name:  <input type="text" [(ngModel)]="name" placeholder="type your name"><br><br>
+      Name:<input type="text" [(ngModel)]="name" placeholder="name of author"><br><br>
        Age: <input type="number" [(ngModel)]="age" placeholder="type your age"><br><br>
-       Occupation:<input type="text" [(ngModel)]="occupation" placeholder="type your occupation"><br>
+      <textarea type="text" [(ngModel)]="occupation" placeholder="write your quote" name="" id="" cols="20" rows="5"></textarea><br>
       Date:<input type="date" [(ngModel)]="date" placeholder="date">
         <div class="button">
-            <button type="submit" (click)="addUsers()" (click)="counter('add')">Like</button>
-            <button type="reset" (click)="counter('minus')" (click)="removeUsers">Delete Upvote</button>
-            <h1>Upvotes:{{count}}</h1>
-          </div>  
+          <button type="submit" (click)="addUsers()" (click)="view()">Submit</button>
+      </div>  
     </div>
-    <app-downvote></app-downvote>
-  
-</div>
+  </div>
